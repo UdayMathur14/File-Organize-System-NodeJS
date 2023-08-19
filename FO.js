@@ -7,7 +7,7 @@
 
 // let firstNumber = process.argv[2]
 // let secondNumber = process.argv[3]
-
+//Helps Us to take input from terminal 
 // console.log(Number(firstNumber) + Number(secondNumber))
 
 
@@ -25,15 +25,14 @@ let inputArr = process.argv.slice(2);
 let command = inputArr[0];
 
 switch (command) {
-  case "tree":
+  case "tree": //Helps to see the tree like structure of your folder
     treeModule.treeFnKey(inputArr[1])
     break;
-  case "organize":
+  case "organize"://Organize all the files according to extension ans you give the directory or path to the input where all the files are present
     orgaizeWaaliFile.organizeFnKey(inputArr[1]); // dirPath
     break;
   case "help":
-    helpModule.helpFnKey();
-
+    helpModule.helpFnKey();//If you want help about these function then use help command
     break;
 
   default:
